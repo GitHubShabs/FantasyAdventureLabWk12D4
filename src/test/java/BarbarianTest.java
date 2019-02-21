@@ -26,7 +26,7 @@ public class BarbarianTest {
 
     @Test
     public void hasWeapon(){
-        assertEquals("club", barbarian.getWeapon());
+        assertEquals(weapon, barbarian.getWeapon());
     }
 
     @Test
