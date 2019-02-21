@@ -1,6 +1,7 @@
 public abstract class Defender extends Player {
 
     String weapons;
+    IAttack attack;
 
 
     public Defender(String name, int healthPoints, String weapons) {
