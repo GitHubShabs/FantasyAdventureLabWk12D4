@@ -1,5 +1,4 @@
-public interface
-IAttack {
+public interface IAttack {
 
-    String attack();
+    int attack();
 }

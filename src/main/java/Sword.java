@@ -7,7 +7,7 @@ public class Sword extends Weapon {
         this.action = "stab";
     }
 
-    public String getWeaponAction() {
+    public String getSwordAction() {
         return action;
     }
 }

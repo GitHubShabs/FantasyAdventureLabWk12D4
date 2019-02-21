@@ -3,22 +3,22 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class SwordTest {
+public class AxeTest {
 
-    Sword sword;
+    Axe axe;
 
     @Before
     public void before(){
-        sword = new Sword(10, "stab");
+        axe = new Axe(15,"slash");
     }
 
     @Test
     public void hasDamageRating(){
-        assertEquals(10, sword.getDamage());
+        assertEquals(15, axe.getDamage());
     }
 
     @Test
     public void hasWeaponActiion(){
-        assertEquals("stab", sword.getSwordAction());
+        assertEquals("slash", axe.getAxeAction());
     }
 }

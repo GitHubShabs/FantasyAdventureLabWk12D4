@@ -6,9 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class BarbarianTest {
 
     Barbarian barbarian;
+    Weapon weapon;
+
     @Before
     public void before(){
-        barbarian = new Barbarian("Doris", 50, "club");
+        weapon = new Club(20, "beat");
+        barbarian = new Barbarian("Doris", 50, weapon);
     }
 
     @Test
@@ -28,8 +31,14 @@ public class BarbarianTest {
 
     @Test
     public void canChangeWeapon() {
-        barbarian.setWeapon("sword");
-        assertEquals("sword", barbarian.getWeapon());
+        Weapon weapon = new Sword(10, "stab");
+        barbarian.setWeapon(weapon);
+        assertEquals(weapon, barbarian.getWeapon());
+    }
+
+    @Test
+    public void canInflictDamage(){
+        assertEquals(20, barbarian.attack());
     }
 }
 

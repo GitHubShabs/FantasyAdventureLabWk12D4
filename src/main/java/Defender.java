@@ -1,19 +1,23 @@
-public abstract class Defender extends Player {
+public abstract class Defender extends Player implements IAttack {
 
-    String weapons;
-    IAttack attack;
+    Weapon weapon;
 
 
-    public Defender(String name, int healthPoints, String weapons) {
+    public Defender(String name, int healthPoints, Weapon weapon) {
         super(name, healthPoints);
-        this.weapons = weapons;
+        this.weapon = weapon;
     }
 
-    public String getWeapon() {
-        return weapons;
+    public Weapon getWeapon() {
+        return weapon;
     }
 
-    public void setWeapon(String weapons) {
-        this.weapons = weapons;
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
+    }
+
+    @Override
+    public int attack() {
+        return this.weapon.getDamage();
     }
 }
