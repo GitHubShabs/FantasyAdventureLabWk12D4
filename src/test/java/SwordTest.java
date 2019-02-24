@@ -18,7 +18,7 @@ public class SwordTest {
     }
 
     @Test
-    public void hasWeaponActiion(){
+    public void hasWeaponAction(){
         assertEquals("stab", sword.getSwordAction());
     }
 }

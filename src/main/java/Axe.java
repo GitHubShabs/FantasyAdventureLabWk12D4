@@ -1,6 +1,6 @@
 public class Axe extends Weapon {
 
-    String action;
+   String action;
 
     public Axe(int damage, String action) {
         super(damage);
