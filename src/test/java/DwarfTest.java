@@ -1,6 +1,7 @@
 import Attack.Axe;
 import Attack.Sword;
 import Attack.Weapon;
+import Fighters.Dwarf;
 import org.junit.Before;
 import org.junit.Test;
 
