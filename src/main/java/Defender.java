@@ -1,4 +1,7 @@
-public abstract class Defender extends Player implements IAttack {
+import Attack.IWeapon;
+import Attack.Weapon;
+
+public abstract class Defender extends Player implements IWeapon {
 
     Weapon weapon;
 

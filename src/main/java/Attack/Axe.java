@@ -1,3 +1,7 @@
+package Attack;
+
+import Attack.Weapon;
+
 public class Axe extends Weapon {
 
    String action;

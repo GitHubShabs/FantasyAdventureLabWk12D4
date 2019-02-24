@@ -1,3 +1,6 @@
+import Attack.Club;
+import Attack.Sword;
+import Attack.Weapon;
 import org.junit.Before;
 import org.junit.Test;
 

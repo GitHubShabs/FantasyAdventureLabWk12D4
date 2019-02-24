@@ -1,3 +1,5 @@
+package Attack;
+
 public class Sword extends Weapon {
 
     String action;

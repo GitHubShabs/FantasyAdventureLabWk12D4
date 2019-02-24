@@ -1,3 +1,5 @@
+package Attack;
+
 public abstract class Weapon {
 
     int damage;
